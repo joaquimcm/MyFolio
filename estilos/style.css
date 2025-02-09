@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-  --brand-color: #2d065f;
+  --brand-color: #c300ff;
 
   --dark-10: #0b0b0b;
   --dark-20: #101010;
@@ -119,7 +119,7 @@ main > aside > h3 {
 
 picture > img {
   width: 300px;
-  box-shadow: 0px 0px 19px #55209b;
+  box-shadow: 0px 0px 19px var(--brand-color);
   border-radius: 50%;
   animation: pulse 5s infinite;
 }
@@ -165,7 +165,7 @@ div.socials > ul > li {
   border: #101010 1px solid;
   border-radius: 10px;
   padding: 0.5rem;
-  background-color: #2d065f;
+  background-color: var(--brand-color);
 }
 
 div.socials > ul > li {
@@ -263,8 +263,8 @@ div.projeto nav > button {
   margin-right: 5px;
   border-radius: 4px;
   border: none;
-  background-color: #2d065f;
-  border: solid 2px #2d065f;
+  background-color: var(--brand-color);
+  border: solid 2px var(--brand-color);
   transition: transform 0.3s;
 }
 
@@ -273,7 +273,7 @@ div.projeto nav > button.sem {
   padding: 0.3rem;
   margin-right: 5px;
   border-radius: 4px;
-  border: solid 2px #2d065f;
+  border: solid 2px var(--brand-color);
   background-color: transparent;
 }
 
@@ -288,12 +288,12 @@ div.projeto nav > button.sem:hover {
 }
 
 div.projeto nav > button.sem > a {
-  color: #2d065f;
+  color: var(--brand-color);
   font-weight: 700;
 }
 
 div.projeto > a:hover {
-  color: #55209b;
+  color: var(--brand-color);
 }
 
 div.habilidades {
@@ -393,7 +393,6 @@ footer > p > span {
     font-size: 3rem;
     text-align: center;
     animation: none;
-    blink-caret: none;
   }
 
   main > aside {
@@ -417,9 +416,7 @@ footer > p > span {
   div.projeto {
     width: 60%;
   }
-  div.projeto  {
   
-  }
   div.habilidades > div.box > div.habilidade {
     width: 45%;
   }
@@ -459,15 +456,20 @@ footer > p > span {
   }
 
   div.sobre {
-    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   div.projeto {
-    width: 100%;
+    width: 80%;
   }
 
   div.habilidades > div.box > div.habilidade {
-    width: 100%;
+    width: 70%;
     margin: 0.5rem 0;
   }
 }
@@ -483,11 +485,10 @@ footer > p > span {
   }
 
   main > aside > h1 {
-    padding-top: 30px;
+    padding-top: 59px;
     font-size: 3rem;
     text-align: center;
     animation: none;
-    blick-caret: none;
   }
 
   div.socials > ul {
